@@ -13,5 +13,6 @@
 	precision = 0.8297126839523475
 	recall = 0.8561099060014461
 
-The multilingual BERT model appears to perfrom worse on NER than (jarib/spacy-nb)[https://github.com/jarib/spacy-nb].
+The multilingual BERT model appears to perform worse on NER than [jarib/spacy-nb](https://github.com/jarib/spacy-nb).
+
 
