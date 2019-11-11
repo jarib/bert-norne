@@ -2,7 +2,7 @@
 
 root=$(pwd)
 
-export OUTPUT_DIR="$root/norne-model"
+export OUTPUT_DIR="$root/data/bert-norne"
 export BATCH_SIZE=32
 export NUM_EPOCHS=10
 export SAVE_STEPS=750
@@ -11,6 +11,8 @@ export BERT_MODEL=bert-base-multilingual-cased
 export MAX_LENGTH=128
 
 cd ./transformers/examples
+
+mkdir -p "$(dirname $OUTPUT_DIR)"
 
 python3 run_ner.py --data_dir "$root" \
 	--model_type bert \
