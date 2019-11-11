@@ -4,11 +4,11 @@ root=$(pwd)
 
 export OUTPUT_DIR="$root/norne-model"
 export BATCH_SIZE=32
-export NUM_EPOCHS=3
+export NUM_EPOCHS=10
 export SAVE_STEPS=750
 export SEED=1
 export BERT_MODEL=bert-base-multilingual-cased
-export MAX_LENGTH=512
+export MAX_LENGTH=128
 
 cd ./transformers/examples
 
